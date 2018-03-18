@@ -1,1 +1,1 @@
-#Find numbers in a dinamic array
+Find numbers in a dynamic array
