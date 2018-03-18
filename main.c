@@ -1,8 +1,6 @@
 /*
  * main.c
- *
- *  Created on: Jun 25, 2015
- *      Author: giorgio
+ * Author: giorgio
  */
 
 #include<stdio.h>
@@ -65,9 +63,9 @@ void funzione(struct record *V, struct list **ptrptr, float target, int N) {
 	int i;
 
 	for (i = 0; i < N; i++) {
-		if (V[i].value == target) {									//Confronto tra il target e i valori nell'array
+		if (V[i].value == target) {									
 			printf("Valore uguali in posizione %d\n", i + 1);
-			suf_insert(ptrptr, i + 1);								//Inserimento nella lista collegata con puntatori
+			suf_insert(ptrptr, i + 1);								
 		} else {
 			printf("Valore diverso in posizione %d \n", i + 1);
 		}
@@ -75,7 +73,7 @@ void funzione(struct record *V, struct list **ptrptr, float target, int N) {
 
 }
 
-void pre_insert(struct list ** ptrptr, int value)					//inserisci in testa
+void pre_insert(struct list ** ptrptr, int value)					
 {
 	struct list * tmp_ptr;
 
@@ -85,7 +83,7 @@ void pre_insert(struct list ** ptrptr, int value)					//inserisci in testa
 	(*ptrptr)->next_ptr = tmp_ptr;
 }
 
-void visit(struct list *ptr)										//visita
+void visit(struct list *ptr)										
 {
 
 	while (ptr != NULL) {
@@ -93,7 +91,7 @@ void visit(struct list *ptr)										//visita
 		ptr = ptr->next_ptr;
 	}
 }
-void suf_insert(struct list ** ptrptr, int value)					// inserisce in coda
+void suf_insert(struct list ** ptrptr, int value)					
 
 {
 	while (*ptrptr != NULL) {
