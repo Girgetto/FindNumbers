@@ -1,1 +1,1 @@
-Find numbers in a dynamic array
+Find numbers in a dynamic array using pointers
